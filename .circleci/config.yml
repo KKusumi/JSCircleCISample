@@ -10,7 +10,7 @@ jobs:
           name: ジョブで定義された環境変数を利用する
           command: echo "NODE_ENV is '$NODE_ENV'"
       - run:
-        name: ステップで同名の環境変数を定義すると上書きされる
-        environment:
-          NODE_ENV: test
-        command: echo "NODE_ENV is $NODE_ENV"
+          name: ステップで同名の環境変数を定義すると上書きされる
+          environment:
+            NODE_ENV: test
+          command: echo "NODE_ENV is $NODE_ENV"
